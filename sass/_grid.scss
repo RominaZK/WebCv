@@ -1,0 +1,197 @@
+/*Etiquetas grid*/
+
+.logo__usuario__grid {
+    grid-area: Logo__usuario;
+}
+
+.Home__portada__grid {
+    grid-area: Portada;
+}
+
+.Redes__grid {
+    grid-area: Redes__grid;
+}
+.Header__usuario{
+    grid-area: Usuario;
+}
+.Header__logo{
+    grid-area: Logo;
+}
+.Redes {
+    grid-area: Redes;
+}
+
+.Buscador {
+    grid-area: Buscador;
+}
+
+.Home__Noticias {
+    grid-area: Noticias;
+}
+
+#carouselExampleCaptions {
+    grid-area: Carrusel;
+}
+.Home__certificación{
+    grid-area: Certificación;
+}
+.Home__Publicidad {
+    grid-area: Publicidad;
+}
+
+footer {
+    grid-area: Footer;
+}
+
+.Footer__contactos__flex {
+    grid-area: Contactos;
+}
+
+.Footer__políticas__flex {
+    grid-area: Políticas;
+}
+
+.Productos__grid {
+    grid-area: Productos__grid;
+}
+
+.Productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+/*Grillas*/
+
+.Home__portada__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        "Redes__grid"
+        "Noticias";
+    row-gap: 2%;
+    justify-items: center;
+    @media screen and (min-width: 500px){
+        row-gap: 1%;
+    }
+    @media screen and (min-width: 768px){
+        grid-template-rows: 10% 90%;
+        row-gap: 0%;
+        justify-items: center;
+        margin: 0% 0%;
+    }
+}
+
+
+.Home__Noticias {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas:
+        "Carrusel"
+        "Publicidad"
+        "Certificación";
+    row-gap: 2%;
+    align-content: space-evenly;
+    justify-items: center;
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "Carrusel  Publicidad"
+        "Certificación Publicidad";
+        column-gap: 0rem;
+        align-content: space-evenly;
+        justify-items: center;
+        justify-content: space-around;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    row-gap: 12%;
+    grid-template-areas:
+        "Políticas"
+        "Contactos";
+    justify-items: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.Home__productos__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 98%;
+    grid-template-areas:
+        "Redes__grid"
+        "Productos__grid";
+    row-gap: 2%;
+    justify-items: center;
+    @media screen and (min-width:500px)  {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 97%;
+        row-gap: 2%;
+        justify-items: center;
+        height: 80%;
+    }
+    @media screen and (min-width: 768px){
+        grid-template-rows: 10% 90%;
+        justify-items: center;
+        height: 100%;
+    }
+}
+
+.Productos__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 2%;
+    justify-items: center;
+    @media screen and (min-width:500px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2%;
+        column-gap: 0%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
+    }
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 0%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
+    }
+}
+
+.Recetas__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10%;
+    justify-items: center;
+    @media screen and (min-width:500px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2%;
+        column-gap: 2%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
+    }
+    @media screen and (min-width:768px){
+        grid-template-columns: 30% 30% 30%;
+        row-gap: 32%;
+        column-gap: 4%;
+    }
+}
