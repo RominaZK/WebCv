@@ -17,6 +17,7 @@ html {
   font-size: 62.5%;
   height: 100%;
   width: 100%;
+  overscroll-behavior-y: inherit;
 }
 
 /*Movile first*/
@@ -87,11 +88,20 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.main_home {
   background-color: #aa998f;
 }
 
 nav {
   margin-bottom: 2%;
+}
+
+.nav_about {
+  background-color: #aa998f;
+  padding: 1%;
+  margin-top: 1%;
 }
 
 .nav-link {
@@ -178,6 +188,16 @@ header {
 
 .Redes__iconos {
   height: 100%;
+}
+
+.img-fluid {
+  width: 12rem;
+  height: auto;
+}
+
+.d-block {
+  width: 10rem;
+  height: auto;
 }
 
 /*Bootstrap*/

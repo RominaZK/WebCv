@@ -3,6 +3,7 @@
 html {
     font-size: 62.5%;
     @include sizes(100%, 100%);
+    overscroll-behavior-y: inherit;
 }
 
 /*Movile first*/
@@ -20,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 
 header {
     @include sizes(100%, 10%);
@@ -69,15 +71,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.main_home{
     background-color: #aa998f;
 }
 nav{
     margin-bottom: 2%;
 }
+.nav_about{
+    background-color: #aa998f;
+    padding: 1%;
+    margin-top: 1%;
+    
+}
 .nav-link{
     color:aliceblue;
     font-weight: 200;
-
 }
 footer {
     margin-top: 0%;
@@ -146,4 +155,12 @@ header {
 
 .Redes__iconos {
     height: 100%;
+}
+.img-fluid{
+    width: 12rem;
+    height: auto;
+}
+.d-block{
+    width: 10rem;
+    height: auto;
 }
