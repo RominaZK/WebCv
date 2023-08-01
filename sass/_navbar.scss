@@ -80,6 +80,11 @@
     flex-direction: row-reverse;
 }
 
+.header_secciones {
+    padding: 10%;
+    background-color: #aa998f;
+}
+
 /*Buscador*/
 
 .form-control {
@@ -109,3 +114,4 @@ button:not(:disabled) {
     background-color: $color3;
     border-radius: 0.25rem;
 }
+
