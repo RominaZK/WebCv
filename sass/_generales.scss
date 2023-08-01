@@ -148,7 +148,7 @@ header {
     @media screen and (min-width: 500px) {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: normal;
         justify-content: space-between;
     }
 }
