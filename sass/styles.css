@@ -3,7 +3,7 @@
 /*maxins*/
 /*Extends*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DynaPuff&display=swap");
-.flexColumn, header {
+.flexColumn {
   display: flex;
   flex-direction: column;
 }
@@ -32,19 +32,17 @@ body {
   width: 100%;
   text-align: center;
   font-weight: bolder;
-  display: flex;
-  flex-direction: column;
+  background-color: #aa998f;
 }
 
-header {
-  height: 10%;
-  width: 100%;
-  font-size: large;
-  justify-content: center;
-  align-items: center;
-  padding: 3%;
-}
+/*header {
+    @include sizes(100%, 10%);
+    font-size: large;
+    justify-content: center;
+    @extend .flexColumn;
+    align-items: center;
 
+}*/
 h1 {
   font-size: 4rem;
   font-weight: 200;
@@ -142,16 +140,9 @@ footer {
 .presentacion {
   height: 100%;
   width: 65%;
-}
-
-.presentacion_text {
-  align-items: center;
-  margin: 18% 0%;
-}
-
-.presentacion_text2 {
-  align-items: center;
-  margin: 2% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .foto.presentacion {
